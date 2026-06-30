@@ -60,5 +60,11 @@ demo = gr.Interface(
     title="🌍 Life Expectancy Predictor",
     description="Enter health and economic factors to predict average life expectancy."
 )
+import os
 
-demo.launch(server_name="0.0.0.0", server_port=7860)requirements.txt
+port = int(os.environ.get("PORT", 7860))
+
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=port
+)
