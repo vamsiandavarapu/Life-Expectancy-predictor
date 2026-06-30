@@ -1,4 +1,5 @@
 gradio==5.36.2
 pandas
 numpy
+requests
 scikit-learn
